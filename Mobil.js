@@ -17,8 +17,39 @@ const mobil = [
     }
 ];
 
-router.get("/", (req, res) => {
+const lokomotif = [
+    {
+        Seri: "CC201",
+        Pabrikan: "General Electric",
+        Tipe: "GE U18C",
+        Tahun: 1977
+    },
+    {
+        Seri: "CC203",
+        Pabrikan: "General Electric",
+        Tipe: "GE U20C",
+        Tahun: 1995
+    },
+    {
+        Seri: "CC204",
+        Pabrikan: "General Electric",
+        Tipe: "GE C18MMi",
+        Tahun: 2003
+    },
+    {
+        Seri: "CC206",
+        Pabrikan: "General Electric",
+        Tipe: "GE CM20EMP",
+        Tahun: 2013
+    }
+];
+
+router.get("/mobil", (req, res) => {
     res.send(mobil);
+});
+
+router.get("/lokomotif", (req, res) => {
+    res.send(lokomotif);
 });
 
 export default router;

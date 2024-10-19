@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(bodyParser.json());
-app.use('/Mobil', Mobil);
+app.use('/', Mobil);
 
 app.listen(PORT, () => 
     console.log(`Server berjalan di port: http://localhost:${PORT}`)
